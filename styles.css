@@ -1,0 +1,42 @@
+body {
+  transition: background-color 0.5s ease;
+  background-color: #ffffff;
+  color: #333;
+  font-family: sans-serif;
+  text-align: center;
+  padding: 50px;
+}
+
+body.dark {
+  background-color: #1e1e1e;
+  color: #f1f1f1;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+  background-color: #007bff;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* CSS animation */
+.animated-image {
+  width: 150px;
+  transition: transform 0.4s ease;
+}
+
+.animate-bounce {
+  animation: bounce 0.5s ease;
+}
+
+@keyframes bounce {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-20px); }
+  100% { transform: translateY(0); }
+}
